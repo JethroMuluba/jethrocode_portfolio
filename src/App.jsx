@@ -7,11 +7,13 @@ import AboutMe from './components/AboutMe'
 function App() {
 
   return (
-<main>
+<body>
     <Header/>
-    <Hero/>
-    <AboutMe/>
-</main>
+    <main className=' absolute top-[60px]'>
+      <Hero/>
+      <AboutMe/>
+    </main>
+</body>
   )
 }
 
