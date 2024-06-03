@@ -58,5 +58,13 @@
             "level" : "81%",
             "logo" : "https://res.cloudinary.com/dr8ofciki/image/upload/v1717362456/Mon-Portfolio-Data/rzhtyoplmaexunlln5fb.png"
         }
+    ],
+
+    "aboutMe" : [
+        {
+            "id" : 0,
+            "text1" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "text2" : "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat."
+        }
     ]
 }
