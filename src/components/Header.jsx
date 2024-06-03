@@ -5,7 +5,7 @@ function Header() {
   return (
   <header className=' fixed flex justify-between items-center w-full bg-[#2B2C2C] py-3 px-4 sm:px-[30px] md:px-[50px] lg:px-[150px] z-50'>
         <div>
-            <span className='text-[#FEB633] font-bold text-[23px] '>Jethro Code</span>
+            <span className='text-[#FEB633] font-bold text-[23px] '>Jethro Code.</span>
         </div>
 
         <MenuBurger/>

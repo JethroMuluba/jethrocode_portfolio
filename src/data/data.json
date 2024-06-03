@@ -2,6 +2,14 @@
     "profile" : "https://res.cloudinary.com/dr8ofciki/image/upload/v1717360449/Mon-Portfolio-Data/mk5ibgdcu0xjote3lhvr.png",
     "cv" : "https://res.cloudinary.com/dr8ofciki/image/upload/v1717362634/Mon-Portfolio-Data/i4gdtwm5ccp67b0gfyek.pdf",
 
+    "aboutMe" : [
+        {
+            "id" : 0,
+            "text1" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "text2" : "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat."
+        }
+    ],
+
     "skills" : [
         {
             "id" : 0,
@@ -60,11 +68,12 @@
         }
     ],
 
-    "aboutMe" : [
+    "realisations" : [
         {
             "id" : 0,
-            "text1" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "text2" : "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat."
+            "iconeWebMobile" : "https://res.cloudinary.com/dr8ofciki/image/upload/v1717456671/Mon-Portfolio-Data/a3aj6hqrine4wjjmfck7.png"
         }
     ]
+
+
 }
