@@ -1,0 +1,62 @@
+{
+    "profile" : "https://res.cloudinary.com/dr8ofciki/image/upload/v1717360449/Mon-Portfolio-Data/mk5ibgdcu0xjote3lhvr.png",
+    "cv" : "https://res.cloudinary.com/dr8ofciki/image/upload/v1717362634/Mon-Portfolio-Data/i4gdtwm5ccp67b0gfyek.pdf",
+
+    "skills" : [
+        {
+            "id" : 0,
+            "name" : "FIGMA",
+            "level" : "95%",
+            "logo" : "https://res.cloudinary.com/dr8ofciki/image/upload/v1717360512/Mon-Portfolio-Data/c51xyxfmrzwby3s6nf2v.png"
+        },
+
+        {
+            "id" : 1,
+            "name" : "HTML5",
+            "level" : "92%",
+            "logo" : "https://res.cloudinary.com/dr8ofciki/image/upload/v1717360512/Mon-Portfolio-Data/zl1kag4hzfyqvyvrh8y5.png"
+        },
+
+        {
+            "id" : 2,
+            "name" : "TAILWIND",
+            "level" : "94%",
+            "logo" : "https://res.cloudinary.com/dr8ofciki/image/upload/v1717360513/Mon-Portfolio-Data/sgg9iigfqlr0gp8xqguf.png"
+        },
+
+        {
+            "id" : 3,
+            "name" : "WORDPRESS",
+            "level" : "85%",
+            "logo" : "https://res.cloudinary.com/dr8ofciki/image/upload/v1717360513/Mon-Portfolio-Data/pln5oeq77bpjxl43irzt.png"
+        },
+
+        {
+            "id" : 4,
+            "name" : "JAVASCRIPT",
+            "level" : "81%",
+            "logo" : "https://res.cloudinary.com/dr8ofciki/image/upload/v1717360512/Mon-Portfolio-Data/asxmnp5znuazf3d6zklm.png"
+        },
+
+        {
+            "id" : 5,
+            "name" : "REACT JS",
+            "level" : "89%",
+            "logo" : "https://res.cloudinary.com/dr8ofciki/image/upload/v1717360512/Mon-Portfolio-Data/xo56ejiduuyjozkrplql.png"
+        },
+
+        {
+            "id" : 6,
+            "name" : "NEXT JS",
+            "level" : "82%",
+            "logo" : "https://res.cloudinary.com/dr8ofciki/image/upload/v1717362456/Mon-Portfolio-Data/u8jc2ddlsdxyfflvzxvt.png"
+        },
+
+        {
+            "id" : 7,
+            "name" : "EXPRESS JS",
+            "level" : "81%",
+            "logo" : "https://res.cloudinary.com/dr8ofciki/image/upload/v1717362456/Mon-Portfolio-Data/rzhtyoplmaexunlln5fb.png"
+        }
+    ]
+}
