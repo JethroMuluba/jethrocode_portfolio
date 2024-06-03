@@ -16,7 +16,7 @@ function AboutMe() {
 
             <div className='flex flex-col gap-4 mx-[80px] md:mx-0 md:flex md:flex-row md:gap-10' >
                 <button className=' bg-[#FEB633] hover:bg-[#303131] text-sm font-semibold hover:border hover:border-[#FEB633] text-white hover:text-[#FEB633] py-[14px] px-[50px] md:ml-0   rounded-md active:border-2 active:border-[#fff]'> View Work</button>
-                <a href='/public/Jethro_Muluba Cv FullStack Developer.pdf' download className=' bg-none hover:bg-[#FEB633] text-sm font-semibold border border-[#FEB633] text-[#FEB633] hover:text-[#FFF] py-[12px] px-[50px] md:m-0   rounded-md active:border-2 active:border-[#fff]'>Download CV</a>
+                <a href={data.cv} download className=' bg-none hover:bg-[#FEB633] text-sm font-semibold border border-[#FEB633] text-[#FEB633] hover:text-[#FFF] py-[12px] px-[50px] md:m-0   rounded-md active:border-2 active:border-[#fff]'>Download CV</a>
             </div>
         </div>
 
