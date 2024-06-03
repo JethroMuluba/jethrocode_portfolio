@@ -1,6 +1,9 @@
-import React from 'react'
+import React from 'react';
+import data from '../data/data.json';
 
 function Realisations() {
+
+    const underTitle = data.realisations[0].underTitle;
   return (
    <section className=' w-full flex flex-col items-center text-center py-[50px]'>
         <div className=' flex flex-col gap-2 items-center md:w2/4   '>
@@ -8,8 +11,7 @@ function Realisations() {
             <span className=' w-[96px] border-b-2 border-[#FEB633]'></span>
         </div>
 
-        <p className='text-[#8D9092] pt-6 px-6 md:p-0 '>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
-est laborum. Sed ut perspiciatis unde omnis iste natur</p>
+        <p className='text-[#8D9092] pt-6 px-6 md:p-0 '> {underTitle} </p>
    </section>
   )
 }
