@@ -23,7 +23,7 @@ return(
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.2 }}
-        className="fixed left-0 shadow-4xl right-0 top-[4rem]  pt-0 border-b border-b-white/20"
+        className="fixed left-0  right-0 top-[4.4rem] "
       >
     <nav className="flex flex-col gap-2 sticky  text-xl bg-[#303131] ">
 
@@ -39,9 +39,9 @@ return(
                 }}
                 >
                 <Link to={'/dashboard'} className='text-white'>
-                    <li className='flex items-center  gap-[20px] py-[10px] px-[27px]  hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
+                    <li className='flex items-center  gap-[20px] py-[20px] px-[27px]  hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
                        
-                        <p className='text-base font-medium '>
+                        <p className='text-sm font-medium '>
                             Home
                         </p>
                     </li>
@@ -59,9 +59,9 @@ return(
                 }}
                 >
                 <Link to={'/depenses'} className='text-white'>
-                    <li className='flex items-center  gap-[20px]  py-[10px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
+                    <li className='flex items-center  gap-[20px]  py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
                         
-                        <p className='text-base font-medium '>
+                        <p className='text-sm font-medium '>
                             About Me
                         </p>
                     </li>
@@ -79,9 +79,9 @@ return(
                 }}
                 >
             <Link to={'/Statistiques'} className='text-white'>
-                <li className='flex items-center  gap-[20px]  py-[10px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
+                <li className='flex items-center  gap-[20px]  py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
                     
-                    <p className='text-base font-medium '>
+                    <p className='text-sm font-medium '>
                         Realisations
                     </p>
                 </li>
@@ -99,9 +99,9 @@ return(
                 }}
                 >
             <Link to={'/Notifications'} className='text-white'>
-                <li className='flex items-center  gap-[20px]  py-[10px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
+                <li className='flex items-center  gap-[20px]  py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
                     
-                    <p className='text-base font-medium '>
+                    <p className='text-sm font-medium '>
                         Experiences
                     </p>
                 </li>
@@ -119,10 +119,10 @@ return(
                 delay: 0.1,
                 }}
                 >
-            <Link to={'/Paramètres'} className='text-white'>
-                <li className='flex items-center  gap-[20px]  py-[10px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
+            <Link to={'/Paramètres'} className='text-white '>
+                <li className='flex items-center  gap-[20px]  py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
                     
-                    <p className='text-base font-medium '>
+                    <p className='text-sm font-medium '>
                         Contact Me
                     </p>
                 </li>
