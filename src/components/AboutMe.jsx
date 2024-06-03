@@ -15,8 +15,8 @@ function AboutMe() {
             </div>
 
             <div className='flex flex-col gap-4 mx-[80px]'>
-                <button className=' bg-[#FEB633] hover:bg-[#303131] text-sm font-semibold hover:border hover:border-[#FEB633] text-white hover:text-[#FEB633] py-[14px] px-[50px]   lg:mr-[450px]  rounded-md'> View Work</button>
-                <button className=' bg-none hover:bg-[#FEB633] text-sm font-semibold border border-[#FEB633] text-[#FEB633] hover:text-[#FFF] py-[14px] px-[50px]   lg:mr-[450px]  rounded-md'>Download CV</button>
+                <button className=' bg-[#FEB633] hover:bg-[#303131] text-sm font-semibold hover:border hover:border-[#FEB633] text-white hover:text-[#FEB633] py-[14px] px-[50px]   lg:mr-[450px]  rounded-md active:border-2 active:border-[#fff]'> View Work</button>
+                <button className=' bg-none hover:bg-[#FEB633] text-sm font-semibold border border-[#FEB633] text-[#FEB633] hover:text-[#FFF] py-[14px] px-[50px]   lg:mr-[450px]  rounded-md active:border-2 active:border-[#fff]'>Download CV</button>
             </div>
         </div>
 
@@ -25,4 +25,4 @@ function AboutMe() {
   )
 }
 
-export default AboutMe
+export default AboutMe;
