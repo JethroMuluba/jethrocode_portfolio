@@ -9,7 +9,7 @@ function App() {
   return (
 <body>
     <Header/>
-    <main className=' absolute top-[60px]'>
+    <main className=' absolute top-[55px]'>
       <Hero/>
       <AboutMe/>
     </main>
