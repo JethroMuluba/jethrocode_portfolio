@@ -12,7 +12,7 @@ function Realisations() {
             <span className=' w-[96px] border-b-2 border-[#FEB633]'></span>
         </div>
 
-        <p className='text-[#8D9092]  px-6 md:px-60  md:p-0 '> {underTitle} </p>
+        <p className='text-[#8D9092]  px-6 md:px-[300px]  md:p-0 '> {underTitle} </p>
 
         <div className=' w-full flex flex-col gap-4 text-left text-white px-6 md:grid md:grid-cols-2 md:px-[50px] lg:px-[230px]'>
 
