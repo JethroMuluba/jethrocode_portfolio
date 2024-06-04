@@ -52,11 +52,8 @@ return(
                 }}
                 >
                 <Link to={'/'} className='text-white'>
-                    <li className='flex items-center  gap-[20px] py-[20px] px-[27px]  hover:bg-[#2B2C2C] hover:text-[#FEB633]  '>
-                       
-                        <p className='text-sm font-medium '>
-                            Home
-                        </p>
+                    <li className='flex items-center  gap-[20px] text-sm font-medium py-[20px] px-[27px]  hover:bg-[#2B2C2C] hover:text-[#FEB633]  '>
+                        Home
                     </li>
                 </Link>
             </motion.li>
@@ -72,11 +69,8 @@ return(
                 }}
                 >
                 <Link to={'/'} className='text-white'>
-                    <li className='flex items-center  gap-[20px]  py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
-                        
-                        <p className='text-sm font-medium '>
-                            About Me
-                        </p>
+                    <li className='flex items-center  gap-[20px] text-sm font-medium  py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
+                        About Me
                     </li>
                 </Link>
         </motion.li>
@@ -92,11 +86,8 @@ return(
                 }}
                 >
             <Link to={'/'} className='text-white'>
-                <li className='flex items-center  gap-[20px]  py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
-                    
-                    <p className='text-sm font-medium '>
-                        Realisations
-                    </p>
+                <li className='flex items-center  gap-[20px] text-sm font-medium py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
+                    Services
                 </li>
             </Link>
         </motion.li>
@@ -112,11 +103,8 @@ return(
                 }}
                 >
             <Link to={'/'} className='text-white'>
-                <li className='flex items-center  gap-[20px]  py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
-                    
-                    <p className='text-sm font-medium '>
+                <li className='flex items-center  gap-[20px] text-sm font-medium py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
                         Experiences
-                    </p>
                 </li>
             </Link>
         </motion.li>
@@ -133,15 +121,11 @@ return(
                 }}
                 >
             <Link to={'/'} className='text-white '>
-                <li className='flex items-center  gap-[20px]  py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
-                    
-                    <p className='text-sm font-medium '>
-                        Contact Me
-                    </p>
+                <li className='flex items-center  gap-[20px] text-sm font-medium py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
+                    Contact Me
                 </li>
             </Link>
         </motion.li>
-
 
         </ul>
 
