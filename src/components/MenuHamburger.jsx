@@ -1,12 +1,25 @@
 import Hamburger from 'hamburger-react'
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from 'framer-motion';
 
 
 function MenuBurger() {
 const [isOpen, setOpen] = useState(false);
-const ref = useRef(null);
+const hamburgerRef = useRef(null);
+
+useEffect (() => {
+    const handleClickOutside = (event) => {
+        if (hamburgerRef.current && !hamburgerRef.current.contains(event.target)) {
+            setOpen(false);
+        }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+    };
+}, []);
 
 const navigate = useNavigate();
 const handleClick = (path) => {
@@ -14,7 +27,7 @@ const handleClick = (path) => {
 }
 
 return(
-<div  className=' block md:hidden top-2'>
+<div ref={hamburgerRef}  className=' block md:hidden top-2'>
     <Hamburger rounded toggled={isOpen} toggle={setOpen} size={20} color="#FEB633"  />
     <AnimatePresence>
     {isOpen && (
@@ -39,7 +52,7 @@ return(
                 }}
                 >
                 <Link to={'/'} className='text-white'>
-                    <li className='flex items-center  gap-[20px] py-[20px] px-[27px]  hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
+                    <li className='flex items-center  gap-[20px] py-[20px] px-[27px]  hover:bg-[#2B2C2C] hover:text-[#FEB633]  '>
                        
                         <p className='text-sm font-medium '>
                             Home
