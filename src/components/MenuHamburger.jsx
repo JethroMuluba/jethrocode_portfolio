@@ -38,7 +38,7 @@ return(
                 delay: 0.1,
                 }}
                 >
-                <Link to={'/dashboard'} className='text-white'>
+                <Link to={'/'} className='text-white'>
                     <li className='flex items-center  gap-[20px] py-[20px] px-[27px]  hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
                        
                         <p className='text-sm font-medium '>
@@ -58,7 +58,7 @@ return(
                 delay: 0.1,
                 }}
                 >
-                <Link to={'/depenses'} className='text-white'>
+                <Link to={'/'} className='text-white'>
                     <li className='flex items-center  gap-[20px]  py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
                         
                         <p className='text-sm font-medium '>
@@ -78,7 +78,7 @@ return(
                 delay: 0.1,
                 }}
                 >
-            <Link to={'/Statistiques'} className='text-white'>
+            <Link to={'/'} className='text-white'>
                 <li className='flex items-center  gap-[20px]  py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
                     
                     <p className='text-sm font-medium '>
@@ -98,7 +98,7 @@ return(
                 delay: 0.1,
                 }}
                 >
-            <Link to={'/Notifications'} className='text-white'>
+            <Link to={'/'} className='text-white'>
                 <li className='flex items-center  gap-[20px]  py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
                     
                     <p className='text-sm font-medium '>
@@ -119,7 +119,7 @@ return(
                 delay: 0.1,
                 }}
                 >
-            <Link to={'/Paramètres'} className='text-white '>
+            <Link to={'/'} className='text-white '>
                 <li className='flex items-center  gap-[20px]  py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
                     
                     <p className='text-sm font-medium '>
