@@ -12,11 +12,11 @@ function Header() {
 
         <nav className=' hidden md:block '>
             <ul className='flex md:gap-4  lg:gap-8 text-white font-normal text-sm' >
-                <li className=' hover:text-[#FEB633] '>Home</li>
-                <li className=' hover:text-[#FEB633] '>About Me</li>
-                <li className=' hover:text-[#FEB633] '>Realisations</li>
-                <li className=' hover:text-[#FEB633] '>Experiences</li>
-                <li className=' hover:text-[#FEB633] '>Contact Me</li>
+                <li className=' hover:text-[#FEB633] cursor-pointer '>Home</li>
+                <li className=' hover:text-[#FEB633] cursor-pointer '>About Me</li>
+                <li className=' hover:text-[#FEB633] cursor-pointer '>Realisations</li>
+                <li className=' hover:text-[#FEB633] cursor-pointer '>Experiences</li>
+                <li className=' hover:text-[#FEB633] cursor-pointer '>Contact Me</li>
             </ul>
         </nav>
     </header>
