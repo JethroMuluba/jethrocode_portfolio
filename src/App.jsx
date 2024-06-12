@@ -5,6 +5,8 @@ import Hero from './components/Hero'
 import AboutMe from './components/AboutMe'
 import Skills from './components/Skills'
 import Realisations from './components/Realisations'
+import WorkExperiences from './components/WorkExperiences'
+import ContactMe from './components/ContactMe'
 
 function App() {
 
@@ -16,6 +18,8 @@ function App() {
       <AboutMe/>
       {/* <Skills/> */}
       <Realisations/>
+      <WorkExperiences/>
+      <ContactMe/>
     </main>
 </body>
   )
