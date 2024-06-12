@@ -35,18 +35,18 @@ function Header() {
   return (
   <header className=' fixed flex justify-between items-center w-full bg-[#2B2C2C] py-3 px-4 sm:px-[30px] md:px-[50px] lg:px-[150px] z-50'>
         <div>
-            <span className='text-[#FEB633] font-bold text-[23px] pl-2 '>Jethro Code.</span>
+            <span className='text-[#FEB633] font-bold text-[23px] pl-2 '> <a href='#home'> Jethro Code. </a></span>
         </div>
 
         <MenuBurger/>
 
         <nav className=' hidden md:block '>
             <ul className='flex md:gap-4  lg:gap-8 text-white font-normal text-sm' >
-                <li className={`hover:text-[#FEB633] cursor-pointer ${getLinkClass('home')}`}>Home</li>
-                <li className={`hover:text-[#FEB633] cursor-pointer ${getLinkClass('about-me')}`}>About Me</li>
-                <li className={`hover:text-[#FEB633] cursor-pointer ${getLinkClass('services')}`}>Services</li>
-                <li className={`hover:text-[#FEB633] cursor-pointer ${getLinkClass('experiences')}`}>Experiences</li>
-                <li className={`hover:text-[#FEB633] cursor-pointer ${getLinkClass('contact-me')}`}>Contact Me</li>
+                <li className={`hover:text-[#FEB633] cursor-pointer ${getLinkClass('home')}`}> <a href='#home'> Home </a></li>
+                <li className={`hover:text-[#FEB633] cursor-pointer ${getLinkClass('about-me')}`}> <a href='#about-me'> About Me </a></li>
+                <li className={`hover:text-[#FEB633] cursor-pointer ${getLinkClass('services')}`}> <a href='#services'> Services </a></li>
+                <li className={`hover:text-[#FEB633] cursor-pointer ${getLinkClass('experiences')}`}> <a href='#experiences'> Experiences </a></li>
+                <li className={`hover:text-[#FEB633] cursor-pointer ${getLinkClass('contact-me')}`}> <a href='#contact-me'> Contact Me </a></li>
             </ul>
         </nav>
     </header>
