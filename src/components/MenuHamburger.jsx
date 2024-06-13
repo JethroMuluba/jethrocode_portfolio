@@ -50,12 +50,9 @@ return(
                 damping: 20,
                 delay: 0.1,
                 }}
+                className='flex items-center  gap-[20px] text-white text-sm font-medium py-[20px] px-[27px]  hover:bg-[#2B2C2C] hover:text-[#FEB633]  '
                 >
-                <Link to={'/'} className='text-white'>
-                    <li className='flex items-center  gap-[20px] text-sm font-medium py-[20px] px-[27px]  hover:bg-[#2B2C2C] hover:text-[#FEB633]  '>
-                        Home
-                    </li>
-                </Link>
+                    <a href='#home'> Home </a>
             </motion.li>
 
             <motion.li
@@ -67,12 +64,9 @@ return(
                 damping: 20,
                 delay: 0.1,
                 }}
+                className='flex items-center  gap-[20px] text-sm text-white font-medium  py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '
                 >
-                <Link to={'/'} className='text-white'>
-                    <li className='flex items-center  gap-[20px] text-sm font-medium  py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
-                        About Me
-                    </li>
-                </Link>
+                    <a href='#about-me'> About Me </a>
         </motion.li>
 
         <motion.li
@@ -84,12 +78,9 @@ return(
                 damping: 20,
                 delay: 0.1,
                 }}
+                className='flex items-center  gap-[20px] text-sm text-white font-medium py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '
                 >
-            <Link to={'/'} className='text-white'>
-                <li className='flex items-center  gap-[20px] text-sm font-medium py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
-                    Services
-                </li>
-            </Link>
+                <a href='#services'> Services </a>
         </motion.li>
 
         <motion.li
@@ -101,12 +92,9 @@ return(
                 damping: 20,
                 delay: 0.1,
                 }}
+                className='flex items-center  gap-[20px] text-white text-sm font-medium py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '
                 >
-            <Link to={'/'} className='text-white'>
-                <li className='flex items-center  gap-[20px] text-sm font-medium py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
-                        Experiences
-                </li>
-            </Link>
+                <a href='#experiences'> Experiences </a>
         </motion.li>
 
 
@@ -119,12 +107,9 @@ return(
                 damping: 20,
                 delay: 0.1,
                 }}
+                className='flex items-center  gap-[20px] text-white text-sm font-medium py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '
                 >
-            <Link to={'/'} className='text-white '>
-                <li className='flex items-center  gap-[20px] text-sm font-medium py-[20px] px-[27px] hover:bg-[#2B2C2C] hover:text-[#FEB633] '>
-                    Contact Me
-                </li>
-            </Link>
+                <a href='#contact-me'> Contact Me </a>
         </motion.li>
 
         </ul>
