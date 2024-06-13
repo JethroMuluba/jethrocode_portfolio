@@ -6,6 +6,7 @@
     import { IoArrowBackCircleOutline } from "react-icons/io5";
     import { IoArrowForwardCircleOutline } from "react-icons/io5";
 
+
         const ExperiencesCarousel = () => {
             const experienceData = data.workExperiences[1].experiences;
             const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,7 +28,8 @@
                         <IoArrowBackCircleOutline size={30} />
                     </button>
 
-                    <div className="flex flex-wrap justify-center gap-4 w-full">
+                    <div className="flex justify-center gap-4 w-full md:flex-row md:gap-0 md:text-left ">
+                        
                         {experienceData.map((experience, index) => (
                         <div
                             key={index}
@@ -48,7 +50,7 @@
                             <div className='flex flex-col gap-[20px]'>
                                 <div className='flex flex-col gap-[5px]'>
                                     <p className="text-[#8D9092]">{experience.workDate}</p>
-                                    <h3 className="text-xl font-bold">{experience.poste}</h3>
+                                    <h3 className="text-[22px] font-bold">{experience.poste}</h3>
                                     <p className="text-[#8D9092]">{experience.entreprise}</p>
                                 </div>
                                 
