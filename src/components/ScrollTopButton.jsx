@@ -30,11 +30,12 @@ import { MdKeyboardDoubleArrowUp } from "react-icons/md";
     }, []);
 
     return (
-        <div className="fixed bottom-4 right-4 z-50">
+        <div className="fixed bottom-4 right-4 z-50 ">
         {isVisible && (
             <button
             onClick={scrollToTop}
-            className="bg-[#FEB633] hover:bg-[#303131] text-white p-2 rounded-full shadow-md transition duration-300"
+
+            className="bg-[#FEB633] hover:bg-[#303131] text-white p-2 rounded-full shadow-md transition duration-300 animate-bounce"
             >
             <MdKeyboardDoubleArrowUp size={24} />
             </button>

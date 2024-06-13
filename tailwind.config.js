@@ -14,6 +14,10 @@ export default {
       backgroundImage: {
         'about-motif': "url('https://res.cloudinary.com/dr8ofciki/image/upload/v1709840663/Mon-Portfolio-Data/design-about.png')",
         'footer-texture': "url('/img/footer-texture.png')",
+      },
+
+      animation: {
+        'animate-bounce': 'bounce 7s infinite',
       }
     },
   },
