@@ -79,7 +79,48 @@
             "id" : 1,
             "iconeWebMobile" : "https://res.cloudinary.com/dr8ofciki/image/upload/v1717456671/Mon-Portfolio-Data/a3aj6hqrine4wjjmfck7.png"
         }
-    ]
+    ],
+
+"workExperiences" : [
+    {
+        "underTitle" :"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natur"
+    },
+
+    {
+        "experiences" : [
+            {
+                "id" : 0,
+                "workDate" : "JUNE 2012 - 2016",
+                "poste" : "Facebook Meta",
+                "description" : "Lorem ipsum dolor sit amet, coectetur adipisicing elit, sed do eiusmod temp incididunt ut labore."
+            },
+    
+            {
+                "id" : 1,
+                "workDate" : "JUNE 2012 - 2016",
+                "poste" : "UI/UX Designer",
+                "entreprise" : "Google Lab",
+                "description" : "Lorem ipsum dolor sit amet, coectetur adipisicing elit, sed do eiusmod temp incididunt ut labore."
+            },
+    
+            {
+                "id" : 3,
+                "workDate" : "JUNE 2012 - 2016",
+                "poste" : "UI/UX Designer",
+                "entreprise" : "Adobe Studio",
+                "description" : "Lorem ipsum dolor sit amet, coectetur adipisicing elit, sed do eiusmod temp incididunt ut labore."
+            },
+    
+            {
+                "id" : 4,
+                "workDate" : "JUNE 2012 - 2016",
+                "poste" : "UI/UX Designer",
+                "entreprise" : "Adobe Inc",
+                "description" : "Lorem ipsum dolor sit amet, coectetur adipisicing elit, sed do eiusmod temp incididunt ut labore."
+            }
+        ]
+    }
+]
 
 
 }
