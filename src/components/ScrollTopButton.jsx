@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect } from 'react';
-import { FaArrowUp } from 'react-icons/fa'; 
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 
     const ScrollToTopButton = () => {
@@ -37,7 +36,6 @@ import { MdKeyboardDoubleArrowUp } from "react-icons/md";
             onClick={scrollToTop}
             className="bg-[#FEB633] hover:bg-[#303131] text-white p-2 rounded-full shadow-md transition duration-300"
             >
-            {/* <FaArrowUp size={24} /> */}
             <MdKeyboardDoubleArrowUp size={24} />
             </button>
         )}
