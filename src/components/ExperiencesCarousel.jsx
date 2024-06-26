@@ -50,7 +50,7 @@
                             <div className='flex flex-col gap-[20px]'>
                                 <div className='flex flex-col gap-[5px]'>
                                     <p className="text-[#8D9092]">{experience.workDate}</p>
-                                    <h3 className="text-[22px] font-bold">{experience.poste}</h3>
+                                    <h3 className="text-[22px] font-semibold">{experience.poste}</h3>
                                     <p className="text-[#8D9092]">{experience.entreprise}</p>
                                 </div>
                                 
