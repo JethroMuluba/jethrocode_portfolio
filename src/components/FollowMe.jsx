@@ -7,7 +7,7 @@ import { FaPinterestP } from "react-icons/fa";
 
 function FollowMe() {
   return (
-    <div className=' flex flex-col gap-[15px] items-center'>
+    <div className=' flex flex-col gap-[15px] items-center md:items-start'>
         <h3 className="text-[22px] font-semibold text-white md:text-start">Follow Me</h3>
         <div className=' flex gap-[14px]' >
             <a href="https://web.facebook.com/jethro.muluba/" className=' text-[#8D9092] hover:text-[#FEB633]'><FaFacebookF size={20} /></a>

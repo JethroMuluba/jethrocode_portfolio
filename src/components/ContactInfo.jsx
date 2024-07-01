@@ -7,7 +7,7 @@ import { IoGlobe } from "react-icons/io5";
 
 function ContactInfo() {
   return (
-    <div className=' flex flex-col gap-[36px]'>
+    <div className=' flex flex-col gap-[36px] '>
         <h3 className="text-[22px] font-semibold text-white md:text-start">Contact Info</h3>
 
         <div className=' flex flex-col gap-[36px]'>
@@ -24,7 +24,7 @@ function ContactInfo() {
             <div className='flex gap-3 items-center'>
                 <FaPhone size={20} color='#8D9092' />
                 <div>
-                    <p className=' text-base text-[#8D9092] '> {data.contact[0].phone1}  -  {data.contact[0].phone2} </p>
+                    <p className=' text-base text-[#8D9092] '> {data.contact[0].phone1} </p>
                     {/* <p className=' text-base text-[#8D9092] '> {data.contact[0].phone2} </p> */}
                 </div>
             </div>
