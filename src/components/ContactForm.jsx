@@ -25,14 +25,14 @@ function ContactForm() {
         </div>
 
         <div className=' flex flex-col items-start  gap-2'>
-          <label htmlFor="email" className=' text-base text-[#8D9092]'>Email</label>
+          <label htmlFor="email" className=' text-base text-[#8D9092]'>EMAIL</label>
           <input {...register("email", {required:true, minLength: 5, maxLength:60})} type="email" className=' bg-[#303131] h-[55px] rounded-[5px] px-5 w-[100%] text-[#fff] placeholder:text-[#8D9092] placeholder:opacity-20 outline-none appearance-none caret-[#fff] ' placeholder='Tape your name' />
           {errors.email && <span style={{color: '#DA5643', fontSize: '14px'}}>Email must have at least 5 letters</span>}
         </div>
       </div>
 
       <div className=' flex flex-col items-start  gap-2'>
-          <label htmlFor="message" className=' text-base text-[#8D9092]'>YOUR MESSAGE</label>
+          <label htmlFor="message" className=' text-base text-[#8D9092]'>MESSAGE</label>
           <textarea {...register("message", {required:true, minLength: 10, maxLength:500})} name="message" id="" className=' bg-[#303131] h-[186px] rounded-[5px] p-5 w-[100%] text-[#fff] placeholder:text-[#8D9092] placeholder:opacity-20 outline-none appearance-none caret-[#fff] ' placeholder='Tape your message here'></textarea>
           {errors.message && <span style={{color: '#DA5643', fontSize: '14px'}}>You must message me to get more informations</span>}  
       </div>

@@ -8,6 +8,7 @@ import Realisations from './components/Realisations'
 import WorkExperiences from './components/WorkExperiences'
 import ContactMe from './components/ContactMe'
 import ScrollToTopButton from './components/ScrollTopButton'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Realisations/>
       <WorkExperiences/>
       <ContactMe/>
+      <Footer/>
       <ScrollToTopButton/>
     </main>
 </body>
