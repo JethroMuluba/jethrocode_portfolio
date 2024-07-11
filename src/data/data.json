@@ -141,6 +141,32 @@
     }
 ],
 
+"contactForm" : [
+    {
+        "label" : "NAME",
+        "errorMessage" : "Name must have at least 3 letters"
+    },
+
+    {
+        "label" : "PHONE NUMBER",
+        "errorMessage" : "Phone is required"
+    },
+
+    {
+        "label" : "EMAIL",
+        "errorMessage" : "Email must have at least 5 letters"
+    },
+
+    {
+        "label" : "MESSAGE",
+        "errorMessage" : "You must message me to get more informations"
+    },
+
+    {
+        "buttonName" : "Send Message"
+    }
+],
+
 "footer" : [
     {
         "title" : "Jethro Code.",
