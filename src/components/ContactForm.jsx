@@ -1,14 +1,31 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
 import data from '../data/data.json'
+import emailjs from 'emailjs-com'
+
 
 function ContactForm() {
 
-        const { register, handleSubmit, formState : {errors}, reset} = useForm();
+  const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
-          const onSubmitForm = (data) => {
-            alert(`Client name is ${data.name}, phone number is ${data.phone}, email is ${data.email} and message is ${data.message}`);
-            reset();
+  const onSubmitForm = (data) => {
+
+    const SERVICE_ID = 'outlook_mail_service';
+    const TEMPLATE_ID = 'contact_formId';
+    const USER_ID = 'yZVMH1wXdomQsAwds';
+
+    emailjs.send(
+      SERVICE_ID,TEMPLATE_ID, data, USER_ID
+    )
+      .then((result) => {
+        console.log(result.text);
+        alert("Message sent successfully!");
+        reset();
+      })
+      .catch((error) => {
+        console.log(error.text);
+        alert("Failed to send the message, please try again.");
+      });
           };
 
           const formData = data.contactForm;
