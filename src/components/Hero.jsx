@@ -23,6 +23,12 @@ function Hero() {
               damping: 20,
               delay: 0.1,
               }}
+
+              whileHover={{ scale: 1.1 }}
+              onHoverStart={e => {}}
+              onHoverEnd={e => {}}
+              whileFocus={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8 }}
             className=' bg-[#FEB633] md:w-[213px] hover:bg-[#303131] text-sm font-semibold hover:border hover:border-[#FEB633] text-white hover:text-[#FEB633] py-[14px] px-[50px] mx-[80px] md:mx-0  rounded-md active:border-2 active:border-[#fff]'>Contact Me</motion.button>
         </div>
         <motion.img 
@@ -33,6 +39,7 @@ function Hero() {
         stiffness: 260,
         damping: 20,
         delay: 0.1,
+        ease: [0, 0.71, 0.2, 1.01]
         }}
         src={data.profile} alt="Profile of Jethro Muluba" className=' md:w-[500px]'/>
     </motion.section>

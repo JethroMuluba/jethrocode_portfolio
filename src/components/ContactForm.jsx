@@ -41,6 +41,7 @@ function ContactForm() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.2 }}
+      
       onSubmit={handleSubmit(onSubmitForm)} className=' flex flex-col gap-[28px]'>
       <div className=' flex flex-col items-start  gap-2'>
         <label htmlFor="name" className=' text-base text-[#8D9092]'> {formData[0].label} </label>
@@ -74,6 +75,7 @@ function ContactForm() {
                         <motion.div 
                           initial={{ scale: 0, opacity: 0 }}
                           animate={{ scale: 1, opacity: 1 }}
+                          exit={{opacity : 3}}
                           transition={{
                           type: "spring",
                           stiffness: 260,
