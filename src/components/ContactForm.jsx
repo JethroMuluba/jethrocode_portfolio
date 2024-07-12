@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import data from '../data/data.json'
 import emailjs from 'emailjs-com'
+import { AnimatePresence, motion } from 'framer-motion';
 
 
 function ContactForm() {
@@ -22,7 +23,7 @@ function ContactForm() {
         console.log(result.text);
         // alert("Message sent successfully!");
         setDisplaySuccesMessage(true);
-        setTimeout(() => setDisplaySuccesMessage(false), 8000);
+        setTimeout(() => setDisplaySuccesMessage(false), 4000);
         reset();
       })
       .catch((error) => {
@@ -33,7 +34,13 @@ function ContactForm() {
 
           const formData = data.contactForm;
   return (
-    <form onSubmit={handleSubmit(onSubmitForm)} className=' flex flex-col gap-[28px]'>
+    <AnimatePresence>
+    <motion.form 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.2 }}
+      onSubmit={handleSubmit(onSubmitForm)} className=' flex flex-col gap-[28px]'>
       <div className=' flex flex-col items-start  gap-2'>
         <label htmlFor="name" className=' text-base text-[#8D9092]'> {formData[0].label} </label>
         <input {...register("name", {required:true, minLength: 3, maxLength:60})} type="text" className=' bg-[#303131] h-[55px] rounded-[5px] px-5 w-[100%] text-[#fff] placeholder:text-[#8D9092] placeholder:opacity-20 outline-none appearance-none caret-[#fff] ' placeholder='Tape your name' />
@@ -63,11 +70,21 @@ function ContactForm() {
       <button type='submit' className=' bg-[#FEB633] md:w-[213px] hover:bg-[#303131] text-sm font-semibold hover:border hover:border-[#FEB633] text-white hover:text-[#FEB633] py-[14px] px-[50px] md:ml-0   rounded-md active:border-2 active:border-[#fff]'>{formData[4].buttonName}</button>
       
       {displaySuccesMessage && (
-                        <div className=" fixed top-[72px] md:top-[58px] right-0 md:right-[150px] lg:right-[400px] xl:right-[550px] items-center text-center bg-[#34B77B] text-white px-4 py-2 rounded">
+                        <motion.div 
+                          initial={{ scale: 0, opacity: 0 }}
+                          animate={{ scale: 1, opacity: 1 }}
+                          transition={{
+                          type: "spring",
+                          stiffness: 260,
+                          damping: 20,
+                          delay: 0.1,
+                          }}
+                          className=" fixed top-[72px] md:top-[58px] right-0 md:right-[150px] lg:right-[400px] xl:right-[550px] items-center text-center bg-[#34B77B] text-white px-4 py-2 rounded">
                             Message sent successfully! Thank you to contact me.
-                        </div>
+                        </motion.div>
                     )}
-    </form>
+    </motion.form>
+    </AnimatePresence>
   )
 }
 
