@@ -9,6 +9,7 @@ function ContactForm() {
 
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
   const [displaySuccesMessage, setDisplaySuccesMessage] = useState(false);
+  const [displayErrorMessage, setDisplayErrorMessage] = useState(false);
 
   const onSubmitForm = (data) => {
 
@@ -21,14 +22,14 @@ function ContactForm() {
     )
       .then((result) => {
         console.log(result.text);
-        // alert("Message sent successfully!");
         setDisplaySuccesMessage(true);
         setTimeout(() => setDisplaySuccesMessage(false), 4000);
         reset();
       })
       .catch((error) => {
         console.log(error.text);
-        alert("Failed to send the message, please try again.");
+        setDisplayErrorMessage(true);
+        setTimeout(() => setDisplayErrorMessage(false), 4000);
       });
           };
 
@@ -80,7 +81,22 @@ function ContactForm() {
                           delay: 0.1,
                           }}
                           className=" fixed top-[72px] md:top-[58px] right-0 md:right-[150px] lg:right-[400px] xl:right-[550px] items-center text-center bg-[#34B77B] text-white px-4 py-2 rounded">
-                            Message sent successfully! Thank you to contact me.
+                            Message Sent Successfully! Thank You To Contact Me.
+                        </motion.div>
+                    )}
+      
+      {displayErrorMessage && (
+                        <motion.div 
+                          initial={{ scale: 0, opacity: 0 }}
+                          animate={{ scale: 1, opacity: 1 }}
+                          transition={{
+                          type: "spring",
+                          stiffness: 260,
+                          damping: 20,
+                          delay: 0.1,
+                          }}
+                          className=" fixed top-[72px] md:top-[58px] right-0 md:right-[150px] lg:right-[400px] xl:right-[550px] items-center text-center bg-[#DA5643] text-white px-4 py-2 rounded">
+                            Failed To Send The Message, Please Try Again.
                         </motion.div>
                     )}
     </motion.form>
