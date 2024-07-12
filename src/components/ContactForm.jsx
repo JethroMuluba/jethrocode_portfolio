@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import data from '../data/data.json'
 import emailjs from 'emailjs-com'
@@ -7,6 +7,7 @@ import emailjs from 'emailjs-com'
 function ContactForm() {
 
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
+  const [displaySuccesMessage, setDisplaySuccesMessage] = useState(false);
 
   const onSubmitForm = (data) => {
 
@@ -19,7 +20,9 @@ function ContactForm() {
     )
       .then((result) => {
         console.log(result.text);
-        alert("Message sent successfully!");
+        // alert("Message sent successfully!");
+        setDisplaySuccesMessage(true);
+        setTimeout(() => setDisplaySuccesMessage(false), 8000);
         reset();
       })
       .catch((error) => {
@@ -58,7 +61,12 @@ function ContactForm() {
       </div>
 
       <button type='submit' className=' bg-[#FEB633] md:w-[213px] hover:bg-[#303131] text-sm font-semibold hover:border hover:border-[#FEB633] text-white hover:text-[#FEB633] py-[14px] px-[50px] md:ml-0   rounded-md active:border-2 active:border-[#fff]'>{formData[4].buttonName}</button>
-
+      
+      {displaySuccesMessage && (
+                        <div className=" fixed top-[72px] md:top-[58px] right-0 md:right-[150px] lg:right-[400px] xl:right-[550px] items-center text-center bg-[#34B77B] text-white px-4 py-2 rounded">
+                            Message sent successfully! Thank you to contact me.
+                        </div>
+                    )}
     </form>
   )
 }
