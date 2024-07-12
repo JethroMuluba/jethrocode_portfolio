@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import MenuBurger from './MenuHamburger'
+import { AnimatePresence, motion } from 'framer-motion';
 
 function Header() {
 
@@ -33,7 +34,13 @@ function Header() {
             return activeSection === section ? 'text-[#FEB633]' : 'text-white';
         }
   return (
-  <header className=' fixed flex justify-between items-center w-full bg-[#2B2C2C] py-3 px-4 sm:px-[30px] md:px-[50px] lg:px-[150px] z-50'>
+    <AnimatePresence>
+    <motion.header
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        className=' fixed flex justify-between items-center w-full bg-[#2B2C2C] py-3 px-4 sm:px-[30px] md:px-[50px] lg:px-[150px] z-50'>
         <div>
             <span className='text-[#FEB633] font-bold text-[23px] pl-2 '> <a href='#home'> Jethro Code. </a></span>
         </div>
@@ -49,8 +56,9 @@ function Header() {
                 <li className={`hover:text-[#FEB633] cursor-pointer ${getLinkClass('contact-me')}`}> <a href='#contact-me'> Contact Me </a></li>
             </ul>
         </nav>
-    </header>
-  )
+    </motion.header>
+    </AnimatePresence>
+    )
 }
 
 export default Header
