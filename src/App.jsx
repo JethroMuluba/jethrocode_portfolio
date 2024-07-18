@@ -4,7 +4,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import AboutMe from './components/AboutMe'
 import Skills from './components/Skills'
-import Realisations from './components/Realisations'
+import Services from './components/Services'
 import WorkExperiences from './components/WorkExperiences'
 import ContactMe from './components/ContactMe'
 import ScrollToTopButton from './components/ScrollTopButton'
@@ -25,7 +25,7 @@ function App() {
           <Hero/>
           <AboutMe/>
           {/* <Skills/> */}
-          <Realisations/>
+          <Services/>
           <WorkExperiences/>
           <ContactMe/>
           <Footer/>
