@@ -54,7 +54,7 @@ function AboutMe() {
             
         </div>
         {displyToggle && (
-                <div className=" absolute w-full px-4 sm:px-[30px] md:px-[50px] lg:px-[150px]">
+                <div ref={toggleRef} className=" absolute w-full px-4 sm:px-[30px] md:px-[50px] lg:px-[150px]">
                 <div className="flex items-center justify-between px-4">
                     <button className="text-gray-400 active:text-[#FEB633] mr-3" onClick={handlePrevClick}>
                         <IoArrowBackCircleOutline size={30} />
