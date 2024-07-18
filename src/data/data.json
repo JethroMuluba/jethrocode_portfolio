@@ -111,25 +111,25 @@
 
 "workExperiences" : [
     {
-        "underTitle" :"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natur"
+        "underTitle" :"I have built a diverse and dynamic career in the tech industry. Here are some of my key professional experiences:"
     },
 
     {
         "experiences" : [
             {
                 "id" : 0,
-                "workDate" : "JUNE 2012 - 2016",
+                "workDate" : "JANUARY 2024 - PRESENT",
                 "poste" : "Front-end Dev",
-                "entreprise" : "Facebook Meta",
-                "description" : "Lorem ipsum dolor sit amet, coectetur adipisicing elit, sed do eiusmod temp incididunt ut labore."
+                "entreprise" : "Polytech Services",
+                "description" : "Developing and maintaining user interfaces for web applications using React and Tailwind CSS."
             },
     
             {
                 "id" : 1,
-                "workDate" : "JUNE 2012 - 2016",
+                "workDate" : "OCTOBER 2023 - PRESENT",
                 "poste" : "UI/UX Designer",
-                "entreprise" : "Google Lab",
-                "description" : "Lorem ipsum dolor sit amet, coectetur adipisicing elit, sed do eiusmod temp incididunt ut labore."
+                "entreprise" : "Bprod Agency",
+                "description" : "Creating web and mobile application mockups, focusing on ergonomics and user experience."
             },
     
             {
@@ -198,7 +198,7 @@
 "footer" : [
     {
         "title" : "Jethro Code.",
-        "underTitle":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natur",
+        "underTitle":"Ready to bring your ideas to life? Let's create something amazing together! Contact me today to get started.",
         "copyright" : "Copyright © 2024 Design by Jethro Code"
     }
 ]

@@ -28,7 +28,7 @@
                         <IoArrowBackCircleOutline size={30} />
                     </button>
 
-                    <div className="flex justify-center gap-4 w-full md:flex-row md:gap-0 md:text-left ">
+                    <div className="flex justify-center gap-4 w-full md:flex-row md:gap- md:text-left ">
                         
                         {experienceData.map((experience, index) => (
                         <div
@@ -59,6 +59,7 @@
 
                         </div>
                         ))}
+                        
                     </div>
 
                     <button className="text-[#8D9092] active:text-[#FEB633] ml-3" onClick={handleNextClick}>
