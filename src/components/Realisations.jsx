@@ -19,33 +19,33 @@ function Realisations() {
             <div className='flex flex-col gap-2 py-[30px] px-[30px] bg-gradient-to-r from-[#25CDE9] to-[#247AE9] rounded-md cursor-pointer  '>
                 <img className='w-[35px]' src={iconeWebMobile} alt="icone Web & Mobile" />
 
-                <h3 className=' text-[22px] font-semibold'> UX & UI Design</h3>
+                <h3 className=' text-[22px] font-semibold'> {data.realisations[2].title} </h3>
 
-                <p className='font-light '>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                <p className='font-light '> {data.realisations[2].description} </p>
             </div>
 
             <div className='flex flex-col gap-2 py-[30px] px-[30px] bg-gradient-to-r from-[#EAC225] to-[#E69824] rounded-md  cursor-pointer '>
                 <img className='w-[35px]' src={iconeWebMobile} alt="icone Web & Mobile" />
 
-                <h3 className=' text-[22px] font-semibold'> Web Development</h3>
+                <h3 className=' text-[22px] font-semibold'> {data.realisations[3].title} </h3>
 
-                <p className='font-light '>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                <p className='font-light '> {data.realisations[3].description} </p>
             </div>
 
             <div className='flex flex-col gap-2 py-[30px] px-[30px] bg-gradient-to-r from-[#E02F95] to-[#AB3AE0] rounded-md  cursor-pointer '>
                 <img className='w-[35px]' src={iconeWebMobile} alt="icone Web & Mobile" />
 
-                <h3 className=' text-[22px] font-semibold'> App Design</h3>
+                <h3 className=' text-[22px] font-semibold'> {data.realisations[4].title} </h3>
 
-                <p className='font-light '>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                <p className='font-light '> {data.realisations[4].description} </p>
             </div>
 
             <div className='flex flex-col gap-2 py-[30px] px-[30px] bg-gradient-to-r from-[#06B459] to-[#07C716] rounded-md cursor-pointer  '>
                 <img className='w-[35px]' src={iconeWebMobile} alt="icone Web & Mobile" />
 
-                <h3 className=' text-[22px] font-semibold'>App Development</h3>
+                <h3 className=' text-[22px] font-semibold'> {data.realisations[5].title} </h3>
 
-                <p className='font-light '>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                <p className='font-light '>{data.realisations[5].description}</p>
             </div>
         </div>
         

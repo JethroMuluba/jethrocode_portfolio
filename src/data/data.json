@@ -5,8 +5,8 @@
     "aboutMe" : [
         {
             "id" : 0,
-            "text1" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "text2" : "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat."
+            "text1" : "I am Jethro Muluba, a passionate full stack web and mobile developer dedicated to creating innovative solutions to achieve ambitious goals. With expertise in UI/UX design, I transform ideas into intuitive and engaging user experiences.",
+            "text2" : "My background as an instructor and my ability to set realistic goals allow me to manage complex projects and solve problems efficiently."
         }
     ],
 
@@ -72,12 +72,40 @@
 
         {
             "id" : 0,
-            "underTitle" : "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natur"
+            "underTitle" : "I offer a comprehensive range of services to meet your digital needs :"
         },
 
         {
             "id" : 1,
             "iconeWebMobile" : "https://res.cloudinary.com/dr8ofciki/image/upload/v1717456671/Mon-Portfolio-Data/a3aj6hqrine4wjjmfck7.png"
+        },
+
+        {
+            "id" : 2,
+            "title" : "UX & UI Design",
+            "description" : "Creating intuitive and aesthetic designs for exceptional user experiences."
+
+        },
+
+        {
+            "id" : 3,
+            "title" : "Web Development",
+            "description" : "Building high-performance and responsive websites using the latest technologies."
+
+        },
+
+        {
+            "id" : 4,
+            "title" : "App Design",
+            "description" : "Designing user-friendly and engaging mobile applications."
+
+        },
+
+        {
+            "id" : 5,
+            "title" : "App Development",
+            "description" : "Developing robust web and mobile applications with a focus on performance and security."
+
         }
     ],
 
