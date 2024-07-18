@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import data from '../data/data.json'
 import { IoArrowBackCircleOutline, IoArrowForwardCircleOutline } from 'react-icons/io5';
+import { AnimatePresence, motion } from 'framer-motion';
 
 function AboutMe() {
 
@@ -54,58 +55,73 @@ function AboutMe() {
             
         </div>
         {displyToggle && (
-                <div ref={toggleRef} className=" absolute w-full px-4 sm:px-[30px] md:px-[50px] lg:px-[150px]">
-                <div className="flex items-center justify-between px-4">
-                    <button className="text-gray-400 active:text-[#FEB633] mr-3" onClick={handlePrevClick}>
-                        <IoArrowBackCircleOutline size={30} />
-                    </button>
+            <AnimatePresence>
+                <div className=' h-screen w-full fixed backdrop-blur-sm top-[70px] md:top-[58px] z-50'>
+                    <motion.div
+                        initial={{ scale: 0, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{
+                        type: "spring",
+                        stiffness: 260,
+                        damping: 20,
+                        delay: 0.1,
+                        }}
+                        ref={toggleRef} 
+                        className="   bg-[#303131] mt-[180px] md:mt-[160px]    py-10 px-4 sm:px-[30px] md:px-[50px] lg:px-[150px] z-50">
+                        <div className="flex items-center justify-between px-4">
+                            <button className="text-gray-400 active:text-[#FEB633] mr-3" onClick={handlePrevClick}>
+                                <IoArrowBackCircleOutline size={30} />
+                            </button>
 
-                    <div className="flex justify-center gap-4 w-full md:flex-row md:gap- md:text-left ">
-                        
-                        {viewWorkData.map((work, index) => (
-                        <div
-                            key={index}
-                            className={`  border border-[#8D9092] text-white px-6 py-12 rounded-md shadow-md w-full md:w-1/3 transition-transform transform ${
-                            (index >= currentIndex && index < currentIndex + 1) || 
-                            (window.innerWidth >= 768 && index >= currentIndex && index < currentIndex + 3) 
-                                ? 'scale-100' 
-                                : 'scale-0'
-                            }`}
-                            style={{
-                            display: 
-                            (index >= currentIndex && index < currentIndex + 1) || 
-                            (window.innerWidth >= 768 && index >= currentIndex && index < currentIndex + 3) 
-                                ? 'block' 
-                                : 'none'
-                            }}
-                        >
-                            <div className='flex flex-col gap-[20px]'>
-                                <div className='flex flex-col gap-[5px]'>
-                                    <p className="text-[#8D9092]">{work.clientName}</p>
-                                    <h3 className="text-[22px] font-semibold">{work.projectName}</h3>
-                                    <p className="text-[#8D9092]">{work.link}</p>
+                            <div className="flex justify-center gap-4 w-full md:flex-row md:gap- md:text-left ">
+                                
+                                {viewWorkData.map((work, index) => (
+                                <div
+                                    key={index}
+                                    className={`  border border-[#8D9092] text-white px-6 py-12 rounded-md shadow-md w-full md:w-1/3 transition-transform transform ${
+                                    (index >= currentIndex && index < currentIndex + 1) || 
+                                    (window.innerWidth >= 768 && index >= currentIndex && index < currentIndex + 3) 
+                                        ? 'scale-100' 
+                                        : 'scale-0'
+                                    }`}
+                                    style={{
+                                    display: 
+                                    (index >= currentIndex && index < currentIndex + 1) || 
+                                    (window.innerWidth >= 768 && index >= currentIndex && index < currentIndex + 3) 
+                                        ? 'block' 
+                                        : 'none'
+                                    }}
+                                >
+                                    <div className='flex flex-col gap-[20px]'>
+                                        <div className='flex flex-col gap-[5px]'>
+                                            <p className="text-[#8D9092]">{work.clientName}</p>
+                                            <h3 className="text-[22px] font-semibold">{work.projectName}</h3>
+                                            <p className="text-[#8D9092]">{work.link}</p>
+                                        </div>
+                                        
+                                    </div>
+
                                 </div>
+                                ))}
                                 
                             </div>
 
+                            <button className="text-[#8D9092] active:text-[#FEB633] ml-3" onClick={handleNextClick}>
+                                <IoArrowForwardCircleOutline size={30} />
+                            </button>
                         </div>
+                        <div className="flex justify-center mt-4">
+                        {viewWorkData.map((_, index) => (
+                            <span
+                            key={index}
+                            className={`mx-1 h-2 w-2 rounded-full ${index === currentIndex ? 'bg-[#FEB633]' : 'bg-[#8D9092]'}`}
+                            ></span>
                         ))}
-                        
-                    </div>
+                        </div>
+                    </motion.div>
+                </div>
 
-                    <button className="text-[#8D9092] active:text-[#FEB633] ml-3" onClick={handleNextClick}>
-                        <IoArrowForwardCircleOutline size={30} />
-                    </button>
-                </div>
-                <div className="flex justify-center mt-4">
-                {viewWorkData.map((_, index) => (
-                    <span
-                    key={index}
-                    className={`mx-1 h-2 w-2 rounded-full ${index === currentIndex ? 'bg-[#FEB633]' : 'bg-[#8D9092]'}`}
-                    ></span>
-                ))}
-                </div>
-            </div>
+            </AnimatePresence>
             )}
 
 
