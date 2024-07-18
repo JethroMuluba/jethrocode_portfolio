@@ -201,6 +201,29 @@
         "underTitle":"Ready to bring your ideas to life? Let's create something amazing together! Contact me today to get started.",
         "copyright" : "Copyright © 2024 Design by Jethro Code"
     }
+],
+
+"viewWork" : [
+    {
+        "id" : 0,
+        "clientName" : "CLIENT NAME",
+        "projectName" : "Project Name",
+        "link" : "www.loremIpsum.com"
+    },
+
+    {
+        "id" : 1,
+        "clientName" : "CLIENT NAME",
+        "projectName" : "Project Name",
+        "link" : "www.loremIpsum.com"
+    },
+
+    {
+        "id" : 2,
+        "clientName" : "CLIENT NAME",
+        "projectName" : "Project Name",
+        "link" : "www.loremIpsum.com"
+    }
 ]
 
 
