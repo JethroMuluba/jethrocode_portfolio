@@ -29,7 +29,8 @@ function Hero() {
               onHoverEnd={e => {}}
               whileFocus={{ scale: 1.2 }}
               whileTap={{ scale: 0.8 }}
-            className=' bg-[#FEB633] md:w-[213px] hover:bg-[#303131] text-sm font-semibold hover:border hover:border-[#FEB633] text-white hover:text-[#FEB633] py-[14px] px-[50px] mx-[80px] md:mx-0  rounded-md active:border-2 active:border-[#fff]'>Contact Me</motion.button>
+              
+            className=' bg-[#FEB633] md:w-[213px] hover:bg-[#303131] text-sm font-semibold hover:border hover:border-[#FEB633] text-white hover:text-[#FEB633] py-[14px] px-[50px] mx-[80px] md:mx-0  rounded-md active:border-2 active:border-[#fff]'> <a href='#contact-me'>Contact Me</a></motion.button>
         </div>
         <motion.img 
         initial={{ scale: 0, opacity: 0 }}
